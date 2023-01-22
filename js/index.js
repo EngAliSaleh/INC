@@ -12,20 +12,11 @@ let arrow = document.querySelector('.arrow');
 let navA = document.querySelectorAll('nav .nav-menu ul li a');
 let Sections = document.querySelectorAll('section');
 //
-let moon = document.querySelector('.moon');
+let moon = document.querySelector('.moon-container');
 let body = document.querySelector('body')
 
 
-/***********************************************colorInput**********************************************/
-colorInput = document.querySelector("input[type=color]");
 
-document.querySelector("input[value='Change-color']").addEventListener('click', function () {
-   document.body.style.backgroundColor = colorInput.value;
-   // document.body.style.color = colorInput.value;
-
-
-});
-/***********************************************colorInput**********************************************/
 
 
 
@@ -33,14 +24,15 @@ document.querySelector("input[value='Change-color']").addEventListener('click', 
 
 
 
-// moon.onclick = function () {
-//     body.classList.toggle('dark');
-//    if (document.body.classList.contains('dark')) {
-//       moon.innerHTML = '<i class="fa-solid fa-sun"></i>'
-//    } else {
-//       moon.innerHTML = '<i class="fa-solid fa-moon moon" ></i>'
-//    }
-// }
+moon.onclick = function () {
+   let x = document.querySelector(".moon-container");
+    body.classList.toggle('dark');
+   if (document.body.classList.contains('dark')) {
+      x.innerHTML = '<i class="fa-solid fa-sun moon"></i>'
+   } else {
+      x.innerHTML = '<i class="fa-solid fa-moon moon" ></i>'
+   }
+}
 
 
 
