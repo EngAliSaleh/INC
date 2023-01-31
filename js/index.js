@@ -1,5 +1,7 @@
 
 
+   document.oncontextmenu = function(){return false;}
+
 let searchBtn = document.querySelector('.search-btn');
 let searchBox = document.querySelector('.search-box');
 let closeBtn = document.querySelector('.close-btn');
